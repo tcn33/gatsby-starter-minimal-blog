@@ -6,7 +6,7 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Toby Nieboer – Technical Recruiter`,
   },
   plugins: [
     {
@@ -15,23 +15,35 @@ module.exports = {
       options: {
         navigation: [
           {
+            title: `About`,
+            slug: `/about`,
+          },
+          {
             title: `Blog`,
             slug: `/blog`,
           },
           {
-            title: `About`,
-            slug: `/about`,
+            title: `Now`,
+            slug: `/now`,
+          },
+          {
+            title: `Resume`,
+            slug: `/resume`,
           },
         ],
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/tcn33`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `GitHub`,
+            url: `https://github.com/tcn33`,
           },
+          {
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/tobynieboer`,
+          },        
         ],
       },
     },
