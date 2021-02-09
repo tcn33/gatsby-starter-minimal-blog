@@ -79,35 +79,8 @@ module.exports = {
         ],
       },
     },
-    /*{
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `img`,
-        path: `${__dirname}/src/img/`
-      }
-    },*/
-    `gatsby-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 1024,
-              showCaptions: true,
-              linkImagesToOriginal: true,
-              wrapperStyle: fluidResult => `flex:${_.round(fluidResult.aspectRatio, 2)};`,
-            },
-          },
-        ],
-      },
-    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     
