@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { getItemYear, getYears } from "../../../utils/getYearStuff";
-import BlogListItem from "@lekoarts/gatsby-theme-minimal-blog/src/components/blog-list-item";
+import BlogListItem from "./blog-list-item";
 
 // Enable if using Typescript
 // type ListingProps = {
