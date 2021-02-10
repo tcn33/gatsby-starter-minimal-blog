@@ -83,7 +83,42 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
-    
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-embedder`,
+            options: {
+              customTransformers: [
+                // Your custom transformers
+              ],
+              services: {
+                // The service-specific options by the name of the service
+              },
+            },
+          },
+          { 
+            resolve: "gatsby-remark-embed-youtube",
+              options: {
+                width: 800,
+                ratio: 1.77, 
+                height: 400, 
+                related: false,
+                noIframeBorder: true
+          }
+        },
+        {
+          resolve: `gatsby-remark-responsive-iframe`,
+          options: {
+            wrapperStyle: `margin-bottom: 1.0725rem`,
+          },
+        }, 
+      ]
+    }
+  },
+  `@pauliescanlon/gatsby-mdx-embed`,
+  
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {
